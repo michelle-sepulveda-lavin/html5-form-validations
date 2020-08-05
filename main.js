@@ -11,6 +11,7 @@ let tarjetas = document.getElementById("tarjetas");
 let mensaje = document.getElementById("mensaje");
 let bodycard = document.querySelector(".card-body")
 let alerta = document.querySelector(".alert")
+let reseteador = document.getElementById("reseteador")
 
 alerta.style.visibility = "hidden";
 
@@ -72,3 +73,17 @@ form.addEventListener("submit", (e) => {
         form.submit()   
     } 
 })
+
+form.addEventListener("reset", function(e){
+    card.style.background ="white";
+    cvc.style.background ="white";
+    amount.style.background ="white";
+    firstname.style.background ="white";
+    lastname.style.background ="white";
+    city.style.background ="white";
+    state.style.background ="white";
+    postalcode.style.background ="white";
+    mensaje.style.background ="white";
+    alerta.style.visibility = "hidden";
+})
+
